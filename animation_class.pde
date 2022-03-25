@@ -22,7 +22,8 @@ class animation{
   
   void update(){
     for (int i = 0; i < this.points.size() ; i++){
-      this.points.set(i, rotate_around_pivot(this.points.get(i), this.points.get((i+1)%(this.points.size())), this.angles.get(i)));
+      println(i, (i+1)%(this.points.size()));
+      this.points.set(i, rotate_around_pivot(this.points.get((i+1)%(this.points.size())), this.points.get(i), this.angles.get(i)));
     }
     
   }
