@@ -19,7 +19,7 @@ class animation{
     }
     circle(this.points.get(this.points.size()-1).x, this.points.get(this.points.size()-1).y, r);
   }
-  
+  void reset_points(){this.points = new ArrayList<PVector>();}
   void update(){
     for (int i = 0; i < this.points.size() ; i++){
       println(i, (i+1)%(this.points.size()));
