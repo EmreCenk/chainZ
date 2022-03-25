@@ -1,5 +1,5 @@
 
-int r = 5000;
+int r = 500;
 float angle = radians(36);
 
 PVector p1 = polar_to_cartesian(r, radians(0));
