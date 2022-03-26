@@ -2,8 +2,8 @@
 
 
 float angle = radians(36);
-int n = 100; // number of points
-int spacing = 20;
+int n = 2; // number of points
+int spacing = 200;
 
 PVector p1 = polar_to_cartesian(spacing, radians(0));
 PVector p2 = new PVector(0, 0);
@@ -33,7 +33,7 @@ void draw(){
   background(0);
   
   generate_points();
-  for (int i = 0; i<1; i++){anim.update(); anim.display();}
+  for (int i = 0; i<102; i++){anim.update(); anim.display();}
   //spacing+=1;
   
   for (int i = 0; i<anim.angles.size(); i++) anim.angles.set(i, anim.angles.get(i) + (radians(1)*pow(-1, i))%360);
